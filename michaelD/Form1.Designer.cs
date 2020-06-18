@@ -29,7 +29,9 @@
             this.textPrenom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textNaissance = new System.Windows.Forms.TextBox();
-            this.button = new System.Windows.Forms.Button();
+            this.butAffichInfos = new System.Windows.Forms.Button();
+            this.lectureDepuisStruct = new System.Windows.Forms.CheckBox();
+            this.butCollectInfos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textNom
@@ -80,22 +82,45 @@
             this.textNaissance.Size = new System.Drawing.Size(100, 20);
             this.textNaissance.TabIndex = 4;
             // 
-            // button
+            // butAffichInfos
             // 
-            this.button.Location = new System.Drawing.Point(98, 279);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(75, 23);
-            this.button.TabIndex = 6;
-            this.button.Text = "Appuyez";
-            this.button.UseVisualStyleBackColor = true;
-            this.button.Click += new System.EventHandler(this.button_Click);
+            this.butAffichInfos.Enabled = false;
+            this.butAffichInfos.Location = new System.Drawing.Point(124, 354);
+            this.butAffichInfos.Name = "butAffichInfos";
+            this.butAffichInfos.Size = new System.Drawing.Size(110, 23);
+            this.butAffichInfos.TabIndex = 6;
+            this.butAffichInfos.Text = "Afficher les infos";
+            this.butAffichInfos.UseVisualStyleBackColor = true;
+            this.butAffichInfos.Click += new System.EventHandler(this.AffichageInfos);
+            // 
+            // lectureDepuisStruct
+            // 
+            this.lectureDepuisStruct.AutoSize = true;
+            this.lectureDepuisStruct.Location = new System.Drawing.Point(428, 64);
+            this.lectureDepuisStruct.Name = "lectureDepuisStruct";
+            this.lectureDepuisStruct.Size = new System.Drawing.Size(237, 17);
+            this.lectureDepuisStruct.TabIndex = 7;
+            this.lectureDepuisStruct.Text = "lecture depuis structure (sinon depuis classe)";
+            this.lectureDepuisStruct.UseVisualStyleBackColor = true;
+            // 
+            // butCollectInfos
+            // 
+            this.butCollectInfos.Location = new System.Drawing.Point(124, 313);
+            this.butCollectInfos.Name = "butCollectInfos";
+            this.butCollectInfos.Size = new System.Drawing.Size(113, 23);
+            this.butCollectInfos.TabIndex = 8;
+            this.butCollectInfos.Text = "Collecter les infos";
+            this.butCollectInfos.UseVisualStyleBackColor = true;
+            this.butCollectInfos.Click += new System.EventHandler(this.CollecteInfos);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button);
+            this.Controls.Add(this.butCollectInfos);
+            this.Controls.Add(this.lectureDepuisStruct);
+            this.Controls.Add(this.butAffichInfos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textNaissance);
             this.Controls.Add(this.label2);
@@ -117,7 +142,9 @@
         private System.Windows.Forms.TextBox textPrenom;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textNaissance;
-        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.Button butAffichInfos;
+        private System.Windows.Forms.CheckBox lectureDepuisStruct;
+        private System.Windows.Forms.Button butCollectInfos;
     }
 }
 
