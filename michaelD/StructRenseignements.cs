@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace michaelD {
     public struct StructRenseignements {
         private string strNom;
-        private string strPrenom;
-        private string strDateNaissance;
+        public string Prenom;
+        public string DateNaissance;
 
+        ////propriete pour faire une verification sur le set
         public string Nom { 
             get => strNom;
             //code de verification
@@ -20,14 +21,6 @@ namespace michaelD {
                     strNom = "invalid name";
                 }
             } 
-        }
-        public string Prenom { 
-            get => strPrenom; 
-            set => strPrenom = value; 
-        }
-        public string DateNaissance { 
-            get => strDateNaissance; 
-            set => strDateNaissance = value; 
         }
     }
 }

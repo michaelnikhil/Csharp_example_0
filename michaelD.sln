@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "michaelD", "michaelD\michaelD.csproj", "{D1F30313-1567-4C2D-B205-8D2C11CDF043}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculAgeDLL", "CalculAgeDLL\CalculAgeDLL.csproj", "{C7928DA8-8B73-46E5-B317-65843AB3A7D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculAgeDLL", "CalculAgeDLL\CalculAgeDLL.csproj", "{C7928DA8-8B73-46E5-B317-65843AB3A7D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCalculAge", "UnitTestCalculAge\UnitTestCalculAge.csproj", "{85977C24-6438-492E-B177-2166B6B7C30C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C7928DA8-8B73-46E5-B317-65843AB3A7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7928DA8-8B73-46E5-B317-65843AB3A7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7928DA8-8B73-46E5-B317-65843AB3A7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85977C24-6438-492E-B177-2166B6B7C30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85977C24-6438-492E-B177-2166B6B7C30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85977C24-6438-492E-B177-2166B6B7C30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85977C24-6438-492E-B177-2166B6B7C30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
