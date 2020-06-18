@@ -10,22 +10,24 @@ namespace michaelD {
         private string strPrenom;
         private string strDateNaissance;
 
-        //constructeur
-        public StructRenseignements(string argNom, string argPrenom, string argDate) {
-            strNom = argNom;
-            strPrenom = argPrenom;
-            strDateNaissance = argDate;
+        public string Nom { 
+            get => strNom;
+            //code de verification
+            set { 
+                if (!value.StartsWith("X")) {
+                    strNom = value;
+                } else {
+                    strNom = "invalid name";
+                }
+            } 
         }
-
-        //get
-        public string Nom() {
-            return strNom;
+        public string Prenom { 
+            get => strPrenom; 
+            set => strPrenom = value; 
         }
-        public string Prenom() {
-            return strPrenom;
-        }
-        public string DateNaissance() {
-            return strDateNaissance;
+        public string DateNaissance { 
+            get => strDateNaissance; 
+            set => strDateNaissance = value; 
         }
     }
 }

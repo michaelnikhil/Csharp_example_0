@@ -23,11 +23,13 @@ namespace michaelD {
 
         private void CollecteInfos(object sender, EventArgs e) {
 
-            //collecte des infos dans la class renseignements
+            //collecte des infos dans la class renseignements, avec un constructeur
             objRensC = new ClassRenseignements(this.textNom.Text, this.textPrenom.Text, this.textNaissance.Text);
 
-            //collecte des infos dans la struct renseignements
-            objRensS = new StructRenseignements(this.textNom.Text, this.textPrenom.Text, this.textNaissance.Text);
+            //collecte des infos dans la struct renseignements => utilisation des proprietes (set)
+            objRensS.Nom = this.textNom.Text;
+            objRensS.Prenom = this.textPrenom.Text;
+            objRensS.DateNaissance = this.textNaissance.Text;
 
             butAffichInfos.Enabled = true;
         }
@@ -42,9 +44,10 @@ namespace michaelD {
             //choix de l'origine des infos en fonction de la checkbox
 
             if (lectureDepuisStruct.Checked) {
-                nom = objRensS.Nom();
-                prenom = objRensS.Prenom();
-                str_naissance = objRensS.DateNaissance();
+                // utilisation du get
+                nom = objRensS.Nom;
+                prenom = objRensS.Prenom;
+                str_naissance = objRensS.DateNaissance;
                 source = "StructRenseigments";
 
             } else {

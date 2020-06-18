@@ -10,14 +10,14 @@ namespace michaelD {
         private string strPrenom;
         private string strDateNaissance;
 
+
         //constructeur
         public ClassRenseignements(string argNom, string argPrenom, string argDate) {
             strNom = argNom;
             strPrenom = argPrenom;
             strDateNaissance = argDate;
         }
-
-        //get
+        
         public string Nom() {
             return strNom;
         }
@@ -27,6 +27,8 @@ namespace michaelD {
         public string DateNaissance() {
             return strDateNaissance;
         }
+
+
 
 
     }
